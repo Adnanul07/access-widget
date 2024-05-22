@@ -1,0 +1,478 @@
+var supplier_response = {
+    "_source_ids": [
+        [
+            15
+        ]
+    ],
+    "controls": {
+        "drop-down-lists": {
+            "data_group": [
+                {
+                    "data_group_id": 1,
+                    "data_group_name": "Demographics"
+                },
+                {
+                    "data_group_id": 2,
+                    "data_group_name": "Financial"
+                },
+                {
+                    "data_group_id": 3,
+                    "data_group_name": "Business"
+                },
+                {
+                    "data_group_id": 4,
+                    "data_group_name": "Legal"
+                },
+                {
+                    "data_group_id": 5,
+                    "data_group_name": "Risk"
+                },
+                {
+                    "data_group_id": 6,
+                    "data_group_name": "Environmental"
+                },
+                {
+                    "data_group_id": 7,
+                    "data_group_name": "LOB Segment"
+                },
+                {
+                    "data_group_id": 8,
+                    "data_group_name": "News"
+                },
+                {
+                    "data_group_id": 9,
+                    "data_group_name": "Technology"
+                },
+                {
+                    "data_group_id": 10,
+                    "data_group_name": "Health"
+                },
+                {
+                    "data_group_id": 11,
+                    "data_group_name": "Real Estate"
+                },
+                {
+                    "data_group_id": 12,
+                    "data_group_name": "GeoSpatial"
+                },
+                {
+                    "data_group_id": 13,
+                    "data_group_name": "Property & Casualty"
+                }
+            ],
+            "geography": [
+                {
+                    "geo_group_id": 1,
+                    "geo_group_name": "Asia"
+                },
+                {
+                    "geo_group_id": 2,
+                    "geo_group_name": "North America"
+                },
+                {
+                    "geo_group_id": 3,
+                    "geo_group_name": "Europe"
+                },
+                {
+                    "geo_group_id": 4,
+                    "geo_group_name": "Africa"
+                },
+                {
+                    "geo_group_id": 5,
+                    "geo_group_name": "South America"
+                },
+                {
+                    "geo_group_id": 6,
+                    "geo_group_name": "Oceania"
+                },
+                {
+                    "geo_group_id": 7,
+                    "geo_group_name": "Australia"
+                },
+                {
+                    "geo_group_id": 8,
+                    "geo_group_name": "Antarctica"
+                }
+            ],
+            "v_business_group_table": [
+                {
+                    "uw_grp_cd": "",
+                    "uw_grp_nme": ""
+                },
+                {
+                    "uw_grp_cd": "A_H_EQUINE",
+                    "uw_grp_nme": "Life, Accident and Health, ELA"
+                },
+                {
+                    "uw_grp_cd": "ACCIDENT_HEALTH",
+                    "uw_grp_nme": "Accident & Health"
+                },
+                {
+                    "uw_grp_cd": "AEROSPACE",
+                    "uw_grp_nme": "Aerospace"
+                },
+                {
+                    "uw_grp_cd": "CASUALTY_DISCONTINUED",
+                    "uw_grp_nme": "Discontinued Casualty"
+                },
+                {
+                    "uw_grp_cd": "CASUALTY_EXCESS",
+                    "uw_grp_nme": "Casualty, Excess"
+                },
+                {
+                    "uw_grp_cd": "CASUALTY_INTERNATIONAL",
+                    "uw_grp_nme": "Casualty, International"
+                },
+                {
+                    "uw_grp_cd": "CASUALTY_NA",
+                    "uw_grp_nme": "Casualty, North America"
+                },
+                {
+                    "uw_grp_cd": "Claims",
+                    "uw_grp_nme": "Claims"
+                },
+                {
+                    "uw_grp_cd": "CONSTRUCTION_INTL",
+                    "uw_grp_nme": "Construction, International"
+                },
+                {
+                    "uw_grp_cd": "CONSTRUCTION_NA",
+                    "uw_grp_nme": "Construction, North America"
+                },
+                {
+                    "uw_grp_cd": "CRISIS_MANAGEMENT",
+                    "uw_grp_nme": "Crisis Management"
+                },
+                {
+                    "uw_grp_cd": "CRISIS_MGMT",
+                    "uw_grp_nme": "Crisis Management"
+                },
+                {
+                    "uw_grp_cd": "DESIGN_SELECT",
+                    "uw_grp_nme": "Design & Select"
+                },
+                {
+                    "uw_grp_cd": "DESIGN_SELECT_CYBER",
+                    "uw_grp_nme": "NA Prof-Design, Select & Cyber"
+                },
+                {
+                    "uw_grp_cd": "DISC_GLOBAL_LINES",
+                    "uw_grp_nme": "Discontinued - Global Lines"
+                },
+                {
+                    "uw_grp_cd": "DISCONTINUED_INTL",
+                    "uw_grp_nme": "Discontinued - International"
+                },
+                {
+                    "uw_grp_cd": "DISCONTINUED_NA",
+                    "uw_grp_nme": "NA Discontinued"
+                },
+                {
+                    "uw_grp_cd": "ELA_FAS",
+                    "uw_grp_nme": "ELA, FAS & PC"
+                },
+                {
+                    "uw_grp_cd": "ENERGY",
+                    "uw_grp_nme": "Global Energy"
+                },
+                {
+                    "uw_grp_cd": "ENERGY_PROPERTY_LIABILITY",
+                    "uw_grp_nme": "Energy"
+                },
+                {
+                    "uw_grp_cd": "Enterprise",
+                    "uw_grp_nme": "Enterprise"
+                },
+                {
+                    "uw_grp_cd": "Enterprise_Data_Solutions",
+                    "uw_grp_nme": "Enterprise Data Solutions"
+                },
+                {
+                    "uw_grp_cd": "ENVIRONMENTAL_GRM",
+                    "uw_grp_nme": "NA Environmental/GRM"
+                },
+                {
+                    "uw_grp_cd": "EXCESS_SURPLUS_USPROG",
+                    "uw_grp_nme": "NA E&S, US Programs"
+                },
+                {
+                    "uw_grp_cd": "FINANCIAL_LINES_INTL",
+                    "uw_grp_nme": "Financial Lines, International"
+                },
+                {
+                    "uw_grp_cd": "FINE_ARTS_SPECIE",
+                    "uw_grp_nme": "Fine Art & Specie"
+                },
+                {
+                    "uw_grp_cd": "INS_MANAGEMENT_ADMIN",
+                    "uw_grp_nme": "Ins Management & Admin"
+                },
+                {
+                    "uw_grp_cd": "INTERNATIONAL_CASUALTY",
+                    "uw_grp_nme": "International Casualty"
+                },
+                {
+                    "uw_grp_cd": "INTERNATIONAL_PROPERTY",
+                    "uw_grp_nme": "International Property"
+                },
+                {
+                    "uw_grp_cd": "INTL_CONSTRUCTION",
+                    "uw_grp_nme": "International Construction"
+                },
+                {
+                    "uw_grp_cd": "INTL_FINANCIAL_LINES",
+                    "uw_grp_nme": "International Financial Lines"
+                },
+                {
+                    "uw_grp_cd": "LONDON_WHOLESALE",
+                    "uw_grp_nme": "London Wholesale"
+                },
+                {
+                    "uw_grp_cd": "MARINE",
+                    "uw_grp_nme": "Marine"
+                },
+                {
+                    "uw_grp_cd": "MERGERS_ACQUISITIONS",
+                    "uw_grp_nme": "Mergers & Acquisitions"
+                },
+                {
+                    "uw_grp_cd": "NA_CONSTRUCTION",
+                    "uw_grp_nme": "NA Construction"
+                },
+                {
+                    "uw_grp_cd": "NA_Construction",
+                    "uw_grp_nme": "NA_Construction"
+                },
+                {
+                    "uw_grp_cd": "NA_EXCESS_CASUALTY",
+                    "uw_grp_nme": "NA Excess Casualty"
+                },
+                {
+                    "uw_grp_cd": "NA_PROF_AND_BERMUDA",
+                    "uw_grp_nme": "NA Prof - US & Bermuda"
+                },
+                {
+                    "uw_grp_cd": "NA_PROPERTY",
+                    "uw_grp_nme": "NA Property"
+                },
+                {
+                    "uw_grp_cd": "Natural_Perils_Science",
+                    "uw_grp_nme": "Natural Perils & Science"
+                },
+                {
+                    "uw_grp_cd": "POLITICAL_RISK_TRD_CR",
+                    "uw_grp_nme": "Political Risk, Credit & Bond"
+                },
+                {
+                    "uw_grp_cd": "PORTFOLIO_DEALS",
+                    "uw_grp_nme": "Portfolio Deals"
+                },
+                {
+                    "uw_grp_cd": "Pricing_&_Analytics",
+                    "uw_grp_nme": "Pricing & Analytics"
+                },
+                {
+                    "uw_grp_cd": "PROPERTY_INTERNATIONAL",
+                    "uw_grp_nme": "Property, International"
+                },
+                {
+                    "uw_grp_cd": "PROPERTY_NORTH_AMERICA",
+                    "uw_grp_nme": "Property, North America"
+                },
+                {
+                    "uw_grp_cd": "PRTC",
+                    "uw_grp_nme": "Political Risk & Trade Credit"
+                },
+                {
+                    "uw_grp_cd": "SPECIALTY_DISCONTINUED",
+                    "uw_grp_nme": "Discontinued Specialty"
+                },
+                {
+                    "uw_grp_cd": "Strategy_Analytics",
+                    "uw_grp_nme": "Strategy & Analytics"
+                },
+                {
+                    "uw_grp_cd": "STRUCTURED RISK SOL",
+                    "uw_grp_nme": "Structured Risk Solutions"
+                },
+                {
+                    "uw_grp_cd": "Technology",
+                    "uw_grp_nme": "Technology"
+                }
+            ]
+        }
+    },
+    "data_contacts": [
+        {
+            "LastModifiedUser": "R02\\A121064                   ",
+            "LastModifieddate": "Thu, 01 Jul 2021 11:33:39 GMT",
+            "created_at": "Mon, 15 Jun 2020 06:11:09 GMT",
+            "data_contact_address": "100 Yonge Street, 12th Floor",
+            "data_contact_cell_phone": "+1 4163711681",
+            "data_contact_city": "Toronto",
+            "data_contact_country": "CA",
+            "data_contact_email": "divya.dhingra@axaxl.com",
+            "data_contact_id": 25,
+            "data_contact_name": "Divya Dhingra",
+            "data_contact_postalcode": "M5C 2W1",
+            "data_contact_state": null,
+            "data_contact_title": "Head of Strategic Research",
+            "data_contact_work_phone": "+1 4163428674",
+            "dw_active_row_ind": "Y"
+        },
+        {
+            "LastModifiedUser": "R02\\A150373                   ",
+            "LastModifieddate": "Fri, 20 Jan 2023 13:33:47 GMT",
+            "created_at": "Fri, 20 Jan 2023 19:03:47 GMT",
+            "data_contact_address": "240 Blackfriars Road",
+            "data_contact_cell_phone": "+44 (0) 7385 935843",
+            "data_contact_city": "London",
+            "data_contact_country": "UK",
+            "data_contact_email": "Harry.Littlejohn@informa.com",
+            "data_contact_id": 3054,
+            "data_contact_name": "Harry Littlejohn",
+            "data_contact_postalcode": "SE1 8BF",
+            "data_contact_state": "London",
+            "data_contact_title": "Key Account Manager",
+            "data_contact_work_phone": null,
+            "dw_active_row_ind": "Y"
+        }
+    ],
+    "edi_data_group_table": [],
+    "edi_geo_group_table": [],
+    "source_business": [],
+    "source_contacts": [
+        {
+            "LastModifiedUser": "R02\\A121064                   ",
+            "LastModifieddate": "Thu, 01 Jul 2021 11:41:11 GMT",
+            "created_at": "Tue, 16 Jun 2020 04:19:29 GMT",
+            "data_contact_id": 25,
+            "data_contact_type": "Source-SME",
+            "dw_active_row_ind": "Y",
+            "source_contact_id": 39,
+            "source_id": 15
+        },
+        {
+            "LastModifiedUser": "R02\\A150373                   ",
+            "LastModifieddate": "Fri, 20 Jan 2023 13:40:51 GMT",
+            "created_at": "Fri, 20 Jan 2023 19:10:51 GMT",
+            "data_contact_id": 3054,
+            "data_contact_type": "Key Account Manager",
+            "dw_active_row_ind": "Y",
+            "source_contact_id": 3181,
+            "source_id": 15
+        }
+    ],
+    "source_events": [],
+    "source_geography": [],
+    "source_groups": [],
+    "source_info": [
+        {
+            "LastModifiedUser": "R02\\A121064                   ",
+            "LastModifieddate": "Wed, 28 Jul 2021 05:58:52 GMT",
+            "created_at": "Tue, 16 Jun 2020 04:30:42 GMT",
+            "dw_active_row_ind": "Y",
+            "source_access_details": "\r\n\t<b>Insurance Day</b><br /><br /> Self-registration / IP authentication: each user creates their own ID/PW.<br /> Start at <a href=\"https://www.insuranceday.com/\" target=\"_blank\">Insurance Day</a>  Click \"Log in\" at the top of the page. You will be recognized as having corporate access. Click \"Register your details\" and follow the prompts to create your login.<br />  Be sure to use your AXA XL email address. Contractor employees with a \"@contractor.axaxl.com\" email address and Global Ag employees with @GlobalAg.com email addresses can register too.<br /><br />  Once you complete the registration you will be directed to the \"Welcome\" page where you can manage your account – set up email alerts, request a demo or change your password.  Clicking on \"My Account\" will also take you to the Welcome page.<br /><br />  To help you set up email alerts or learn how to search and navigate the website click here: <a href=\"https://insuranceday.maritimeintelligence.informa.com/-/media/insurance-day/customer-support/insurance-day-user-guide.pdf?la=en&hash=F691BD529994FF4FC5BCF5D66C21AE7C0FE296FC\" target=\"_blank\">\"Hints & Tips\"</a>.<br /><br />  <b> Insurance News 24</b> - To sign up for your daily Insurance News 24, please email <a href=\"mailto:James.Littlejohn@informa.com\" target=\"_blank\">James Littlejohn</a> and request to be added to the IIN24 daily email distribution.<br /><br />  Contact Support Resources via Tel: +44 (0)20 7017 4161 Email: onlineaccess@informa.com or visit the Insurance Day <a href=\"https://insuranceday.maritimeintelligence.informa.com/customer-support/training-calendar\" target=\"_blank\">Support page</a>.<br /><br />  Reset Password: Visit <a href=\"https://maritime.id.informa.com/forgotpassword?referralId=INSD&referralurl=%2Fservices%2Foauth2%2Fauthorize%3Fresponse_type%3Dcode%26redirect_uri%3Dhttps%3A%2F%2Finsuranceday.maritimeintelligence.informa.com%2FUser%2FProcessUserRequest%26state%3D%2F%3Fvid%3DMaritime%26processId%3D263e1c47-cd48-40f3-a0da-71f20470adce%26client_id%3D3MVG98_Psg5cppyaSAnhT6ol6K108DrMFlC.Ojj545_ojeLPMKqr2GpBp2jAcGk0YZfnFZsYAEybhO3yeGu0n&u=\" target=\"_blank\">forgot password page</a> and enter your email address / username. You will receive an email to reset your password",
+            "source_data_size": null,
+            "source_description": "Informa's Insurance Day is an online news and research service delivering the latest insurance news, commentary and analysis",
+            "source_discovery_date": "Thu, 03 May 2018 00:00:00 GMT",
+            "source_discovery_person_id": 1,
+            "source_extent": null,
+            "source_grain": "Varies",
+            "source_id": 15,
+            "source_name": "Insurance Day",
+            "source_name_alias": null,
+            "source_refresh_cycle_external": "TBD",
+            "source_refresh_cycle_internal": "TBD",
+            "source_under_contract": true,
+            "source_update_date": "Thu, 03 May 2018 00:00:00 GMT",
+            "source_update_person_id": 1,
+            "supplier_id": 17
+        }
+    ],
+    "source_tags": [],
+    "source_usage": [],
+    "supplier_contacts": [
+        {
+            "LastModifiedUser": "R02\\A121064                   ",
+            "LastModifieddate": "Tue, 16 Jun 2020 09:48:49 GMT",
+            "contact_address": "Christchurch Court, 10-15 Newgate St",
+            "contact_cell_phone": null,
+            "contact_city": "London",
+            "contact_country": "United Kingdom",
+            "contact_email": "Toby.Nunn@informa.com",
+            "contact_id": 1033,
+            "contact_postalcode": "EC1A 7AZ",
+            "contact_state": "Broughton",
+            "contact_title": "Key Account Manager",
+            "contact_type": null,
+            "contact_work_phone": "+44(0)2070174997",
+            "created_at": "Tue, 16 Jun 2020 04:48:40 GMT",
+            "dw_active_row_ind": "Y",
+            "first_name": "Toby",
+            "last_name": "Nunn",
+            "supplier_id": 17
+        },
+        {
+            "LastModifiedUser": "R02\\A121064                   ",
+            "LastModifieddate": "Thu, 20 Aug 2020 10:16:25 GMT",
+            "contact_address": null,
+            "contact_cell_phone": null,
+            "contact_city": null,
+            "contact_country": null,
+            "contact_email": null,
+            "contact_id": 1058,
+            "contact_postalcode": null,
+            "contact_state": null,
+            "contact_title": "Client Services Executive",
+            "contact_type": "Services Executive",
+            "contact_work_phone": "+44(0)2033773996",
+            "created_at": "Thu, 20 Aug 2020 05:16:25 GMT",
+            "dw_active_row_ind": "Y",
+            "first_name": "Jade",
+            "last_name": "Wong",
+            "supplier_id": 17
+        },
+        {
+            "LastModifiedUser": "R02\\A121064                   ",
+            "LastModifieddate": "Wed, 28 Jul 2021 06:13:56 GMT",
+            "contact_address": "110 Southwark Street London ",
+            "contact_cell_phone": "+44 (0)7867 356 033",
+            "contact_city": "London",
+            "contact_country": "UK",
+            "contact_email": "adrian.skidmore@informa.com",
+            "contact_id": 1061,
+            "contact_postalcode": "SE1 0TA",
+            "contact_state": "London",
+            "contact_title": null,
+            "contact_type": null,
+            "contact_work_phone": null,
+            "created_at": "Wed, 28 Jul 2021 01:13:56 GMT",
+            "dw_active_row_ind": "Y",
+            "first_name": "Adrian",
+            "last_name": "Skidmore",
+            "supplier_id": 17
+        }
+    ],
+    "supplier_info": [
+        {
+            "LastModifiedUser": "R02\\A121064                   ",
+            "LastModifieddate": "Tue, 16 Jun 2020 09:50:25 GMT",
+            "created_at": "Tue, 16 Jun 2020 04:50:17 GMT",
+            "dw_active_row_ind": "Y",
+            "supplier_address": "5 Howick Place",
+            "supplier_city": "London",
+            "supplier_country": "UK",
+            "supplier_description": "Informa is a leading business intelligence, academic publishing, knowledge and events business, operating within the Knowledge and Information Economy.",
+            "supplier_email": null,
+            "supplier_fax": null,
+            "supplier_id": 17,
+            "supplier_name": "Informa Group plc",
+            "supplier_phone": "+44 (0) 20 7017 5000",
+            "supplier_postalcode": "SW1P 1WG",
+            "supplier_state": null,
+            "supplier_url": "https://informa.com/"
+        }
+    ],
+    "v_business_group_table": []
+}
